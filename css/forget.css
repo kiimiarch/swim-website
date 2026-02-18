@@ -1,0 +1,98 @@
+body{
+    font-family:'Vazirmatn',sans-serif;
+    background:#E6F7FF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+/* container box */
+.forget-box{
+    background:#fff;
+    padding:40px 35px;
+    width:380px;
+    text-align:center;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+/* title */
+.forget-box h2{
+    margin-bottom:15px;
+    font-size:24px;
+    color:#003D66;
+}
+
+/* description */
+.forget-box p{
+    font-size:14px;
+    color:#777;
+    margin-bottom:25px;
+}
+
+/* input */
+input{
+    width: 85%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 35px;
+    border: 1px solid #ccc;
+    font-family: 'Vazirmatn',sans-serif;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    outline:none;
+    border-color:#007BFF;
+    box-shadow:0 0 0 3px rgba(0,123,255,.2);
+}
+
+/* button */
+button{
+    width: 65%;
+    padding: 12px;
+    background: linear-gradient(45deg, #007BFF, #0066A8);
+    color:#fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,123,255,.4);
+}
+
+/* پیام‌ها */
+.message {
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.message.success {
+    background: #e6f7ff;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}
+
+.message.error {
+    background: #ffe6e6;
+    color: #ff4757;
+    border: 1px solid #ff4757;
+}
+
+/* فرم‌ها داخل صفحه */
+form{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}

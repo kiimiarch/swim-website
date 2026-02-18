@@ -1,0 +1,115 @@
+:root {
+    --primary:#007BFF;
+    --bg:#E6F7FF;
+    --text:#003D66;
+}
+
+body{
+    font-family:'Vazirmatn',sans-serif;
+    background:var(--bg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    margin:0;
+}
+
+.register-box{
+    background:#fff;
+    padding:70px;
+    width:100%;
+    max-width:420px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.register-box > p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+h2{
+    margin-bottom:10px;
+}
+
+.input-group {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.input-group input {
+    width: 93%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+}
+
+.register-btn{
+    width: 100%;
+    padding:14px;
+    background:linear-gradient(45deg,var(--primary),#208a7e);
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(42, 157, 143, 0.4);
+}
+
+.terms{
+    display:flex;
+    align-items:center;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+#error{
+    color:red;
+    margin-bottom:15px;
+}
+
+.login-link{
+    margin-top:20px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.message.success {
+    background: #e6fff1;
+    color: #0a7a3d;
+    border: 1px solid #0a7a3d;
+}
+
+.message.error {
+    background: #ffecec;
+    color: #c10000;
+    border: 1px solid #c10000;
+}

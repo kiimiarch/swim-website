@@ -1,0 +1,260 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #6ED5E6;
+    --background-color: #E6F7FF;
+    --text-color: #003D66;
+    --card-bg-color: #ffffff;
+
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background-color: var(--background-color);
+    background-image: url('images/persian-pattern.png'); /* تصویر پس‌زمینه */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: auto;
+    margin:0;
+    color: var(--text-color);
+    backdrop-filter: blur(5px);
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.login-box {
+        background:#fff;
+    padding:70px;
+    width:100%;
+    max-width:450px;
+    border-radius:213px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.elements{
+      padding-top: 20px;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.login-box > p {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.input-group input {
+    width: 93%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-family: 'Vazirmatn', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(42, 157, 143, 0.2);
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.remember-me input {
+    margin-left: 8px;
+}
+
+.forgot-password {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    background: linear-gradient(45deg, var(--primary-color), #208a7e);
+    color: white;
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(42, 157, 143, 0.4);
+}
+
+.social-login {
+    margin-top: 30px;
+}
+
+.social-login p {
+    color: #999;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* خط کنار "یا" */
+.social-login p::before, .social-login p::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.social-login p::before { right: 0; }
+.social-login p::after { left: 0; }
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    background-color: #f5f5f5;
+}
+
+.social-icon img {
+    width: 28px;
+}
+
+.register-link {
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+.register-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Dashboard styles */
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.dashboard-box {
+    background: #fff;
+    padding: 70px;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 213px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.dashboard-options {
+    margin-top: 30px;
+}
+
+.dashboard-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: none;
+    background: linear-gradient(45deg, var(--primary-color), #208a7e);
+    color: white;
+    font-family: 'Vazirmatn', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.dashboard-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(42, 157, 143, 0.4);
+}
+
+.logout-btn {
+    background: linear-gradient(45deg, #e74c3c, #c0392b);
+}
+
+.logout-btn:hover {
+    box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+}
+
+/* Terms and Conditions styling */
+.terms-content {
+    line-height: 1.8;
+}
+
+.terms-content h3 {
+    color: var(--primary-color);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.terms-content p {
+    margin-bottom: 8px;
+}
+
+.terms-content a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}

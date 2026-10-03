@@ -1,6 +1,6 @@
 # Swim Website
 
-Website for swimming classes and aquatic training.
+Website for swimming classes .
 
 ## Live Demo
 
